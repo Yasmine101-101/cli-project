@@ -287,7 +287,7 @@ def main():
 
     try:
         args = parser.parse_args()
-        args.func(args)  # call the handler function set by set_defaults(func=...)
+        args.func(args)  
     except KeyboardInterrupt:
         print_info("\nOperation cancelled by user.")
     except Exception as e:

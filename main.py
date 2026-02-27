@@ -19,17 +19,11 @@ Examples:
 import sys
 import os
 
-# ─────────────────────────────────────────────
-# PATH SETUP
-# ─────────────────────────────────────────────
 
-# Make sure the root project folder is on the Python path
-# so that `from project_manager import ...` works correctly
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-# ─────────────────────────────────────────────
-# IMPORT & RUN
-# ─────────────────────────────────────────────
+
 
 from project_manager.cli import main
 

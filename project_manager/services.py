@@ -12,9 +12,7 @@ from project_manager.models import User, Project, Task
 from project_manager import storage
 
 
-# ─────────────────────────────────────────────
-# HELPERS
-# ─────────────────────────────────────────────
+
 
 def _get_all_users() -> list:
     """Load and return all users from storage."""

@@ -15,6 +15,7 @@ import os
 # ─────────────────────────────────────────────
 
 # Build the path to the data/ folder relative to this file's location
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 USERS_FILE = os.path.join(DATA_DIR, "users.json")
@@ -65,7 +66,7 @@ def load_users() -> list:
         list: List of User instances. Returns empty list if file
               doesn't exist or is malformed.
     """
-    # Import here to avoid circular imports at module level
+    
     from project_manager.models import User
 
     _ensure_data_dir()
@@ -76,7 +77,7 @@ def load_users() -> list:
 
     try:
         with open(USERS_FILE, "r") as f:
-            data = json.load(f)  # parse JSON into Python list of dicts
+            data = json.load(f)  
 
         return [User.from_dict(u) for u in data]  # rebuild User objects
 
