@@ -1,0 +1,9 @@
+# requirements.txt
+# External dependencies for the Project Manager CLI Tool
+# Install all packages with: pip install -r requirements.txt
+
+# Rich — for styled terminal output, tables, and colored text
+rich>=13.0.0
+
+# Pytest — for unit testing
+pytest>=7.0.0
